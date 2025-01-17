@@ -19,9 +19,9 @@ public class DragonSitter {
 			} // end of if statement
 		} // end of while statement
 		dragonname = dragonname.substring(0, 1).toUpperCase() + dragonname.substring(1).toLowerCase(); //this ensures name starts capitalized and rest lower case
-		System.out.println("Your dragon, " + dragonname + ", chirps excitedly and flaps its little wings.");
+		System.out.println("Great! Your dragon, " + dragonname + ", chirps excitedly and flaps its little wings.");
 
-		System.out.println(dragonname + " looks unhappy. What would you like to do first with " + dragonname + "?");
+		System.out.println(dragonname + " stares up at you eagerly. What would you like to do first with " + dragonname + "?");
 		
 		String interaction = ""; //declares interaction as an empty value
 		boolean petUsed = false, feedUsed = false, playUsed = false, bathUsed = false; //these tell the while loop when to end
@@ -39,12 +39,12 @@ public class DragonSitter {
 			if (!bathUsed) {
 				System.out.println("Bath");
 			}
-			if (petUsed && feedUsed && playUsed && bathUsed == true) { //triggers when boolean inputs are all true
+			if (petUsed && feedUsed && playUsed && bathUsed) { //triggers when boolean inputs are all true
 				System.out.println(
 						dragonname + " finally begins yawning, all worn out! Tell " + dragonname + " to go to BED.");
 			}
 
-			interaction = sc.nextLine().trim(); // waits for interaction input and trims spaces
+			interaction = sc.nextLine().trim(); // waits for interaction input and trims empty spaces
 
 			if (interaction.toLowerCase().contains("pet")) { //must contain any variation of pet, allows for other words to be included
 				System.out.println("You scratch " + dragonname + " on the head. " + dragonname + " purrs.");
