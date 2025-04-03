@@ -29,7 +29,7 @@ DragonSitter/\
 - The program will prompt the user to name the dragon and ensure the name is valid (no spaces or non-letter characters).
 - The player can interact with the dragon by choosing from the following options: pet, feed, play, and bath.
 - After all interactions are completed, the player will be instructed to tell the dragon to go to bed.
-- If the player attempts to send the dragon to bed before completing all tasks, the game will remind them to finish first.
+- If the player attempts to send the dragon to bed before completing all tasks, the game will remind them to finish all the other tasks first.
 - When the dragon goes to bed, the game ends with a thank-you message.
 
 ### Personal Experience & Challenges
